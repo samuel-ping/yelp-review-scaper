@@ -19,4 +19,11 @@ I created this repo as my first step, to create a dataset of Yelp Reviews (to tr
 - And then I found this: https://en.wikipedia.org/wiki/List_of_largest_cities_of_U.S._states_and_territories_by_population
   - I like this because its the top 5 populated cities by state, and I know why these cities are listed.
 - So now I'm thinking that I'm going to scrape that Wikipedia page for the states and their corresponding top five most populated cities and put that into a .csv file or something. Then I'll see where to go from there! I think this'll be a good warmup before the massive Yelp scraping.
+  - Issue #1: Wikipedia page doesn't have state abbreviations. I'll have to either make a file manually for that or scrape a list online. Or just find one online.
+  - Issue #2: Wikipedia page includes territories. Thus, I can include them in my dataset, if their abbreviations work in the Yelp search
+    - https://secure.ssa.gov/apps10/poms.nsf/lnx/0901501010 is gov website for states + territories and their abbreviations, nice!
+- I think my dataset will have the following sections: ["abbreviation","city1","city2","city3","city4","city5"]
+  - Don't need the full name of the state/territory because its never used in the Yelp search as far as I can see
+- State & abbreviation scraper done!
+
 - For future reference when I do the machine learning stuff: https://www.youtube.com/watch?v=P0o5U9pq8_s&t=202s
