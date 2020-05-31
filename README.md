@@ -26,4 +26,6 @@ I created this repo as my first step, to create a dataset of Yelp Reviews (to tr
   - Don't need the full name of the state/territory because its never used in the Yelp search as far as I can see
 - State & abbreviation scraper done!
 
-- For future reference when I do the machine learning stuff: https://www.youtube.com/watch?v=P0o5U9pq8_s&t=202s
+### For future reference:
+- multithreading: https://docs.python.org/3/library/multiprocessing.html https://medium.com/@leportella/how-to-run-parallel-processes-8939dafae81e
+-machine learning stuff: https://www.youtube.com/watch?v=P0o5U9pq8_s&t=202s
