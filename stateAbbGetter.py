@@ -39,17 +39,27 @@ def getMostPopulatedCities(stateAbbreviations):
     page = requests.get("https://en.wikipedia.org/wiki/List_of_largest_cities_of_U.S._states_and_territories_by_population")
     soup = BeautifulSoup(page.text, "html.parser")
 
+    # stateAbbreviation city1 city2 city3 city4 city5
+    finalData = [["stateAbbreviation", "city1", "city2", "city3", "city4", "city5"]]
+
     tempRow = []
     data = []
 
-    rows = soup.findAll("tr")
+    table = soup.find("tbody")
+    # getting all rows in the table
+    rows = table.findAll("tr")
+
+    # for state in stateAbbreviations[1:]:
+    #     currState = state[0]
+    #     print("current state is ")
+    #     print(currState)
+
 
     for row in rows:
-        cols = row.findAll("td")
-        for cell in cols:
-            cellContent = cell.getText()
-            print("-----------------")
-            print(cellContent)
+        # getting all columns in a row
+        columns = row.findAll("td")
+        currState = columns[0].find("title") # for me: why isnt this working when it literally works in test.py?!
+        print(currState)
 
 # recursively removes integers and parentheses in string
 def removeIntsParenths(s):
@@ -69,5 +79,7 @@ def removeIntsParenths(s):
     
 
 if __name__ == "__main__":
-    stateAbbreviations = getStateAbbreviations()
+    # stateAbbreviations = getStateAbbreviations()
+    # print(stateAbbreviations)
+    stateAbbreviations = [['State', 'Territory Abbreviation'], ['Alabama', 'AL'], ['Alaska', 'AK'], ['American Samoa', 'AS'], ['Arizona', 'AZ']]
     getMostPopulatedCities(stateAbbreviations)
