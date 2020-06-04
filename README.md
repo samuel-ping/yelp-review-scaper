@@ -25,7 +25,9 @@ I created this repo as my first step, to create a dataset of Yelp Reviews (to tr
 - I think my dataset will have the following sections: ["abbreviation","city1","city2","city3","city4","city5"]
   - Don't need the full name of the state/territory because its never used in the Yelp search as far as I can see
 - State & abbreviation scraper done!
+- Now compiles state abbreviations and their top 5 most populated cities into a single .csv file
 
 ### For future reference:
+
 - multithreading: https://docs.python.org/3/library/multiprocessing.html https://medium.com/@leportella/how-to-run-parallel-processes-8939dafae81e
--machine learning stuff: https://www.youtube.com/watch?v=P0o5U9pq8_s&t=202s
+  -machine learning stuff: https://www.youtube.com/watch?v=P0o5U9pq8_s&t=202s
