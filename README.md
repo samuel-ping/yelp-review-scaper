@@ -2,9 +2,9 @@
 
 ## What I eventually want this to be:
 
-This is intended to be part of my Food Mood project. I eventually want to make something (an API?) where you input the user's location and mood, and you get a list of restaurants curated to those inputs. I hope to use a machine learning model that can perform emotion analysis on a number of Yelp reviews from restaurants around the location input, and get the restaurants most tailored towards the mood input.
+This is part of my Food Mood project. I eventually want to make something (an API?) where you put in the user's location and mood, and you get a list of restaurants curated to those inputs. I hope to use a machine learning model that can perform emotion analysis on a number of Yelp reviews from restaurants around the location input, and get the restaurants most tailored towards the mood input.
 
-I created this repo as my first step, to create a dataset of Yelp Reviews (to train my model) by using Python and a webscraper (probably BeautifulSoup). I know there are already Yelp review datasets out there but I wanna at least try this first and see how it goes!
+At the moment, this Python script compiles a dataset of the top five most populated cities in each state in the US, and its next step is to scrape Yelp reviews from the restaurants in these cities.
 
 ## My Journal
 
