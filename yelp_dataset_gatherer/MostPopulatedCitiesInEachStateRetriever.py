@@ -4,7 +4,8 @@ from bs4 import BeautifulSoup
 from StateAbbreviationsGetter import getStateAbbreviations
 
 # returns dataset with state abbreviations and top 5 most populated cities from each state
-def getMostPopulatedCities(stateAbbreviations):
+def getMostPopulatedCities():
+    stateAbbreviations = getStateAbbreviations()
     page = requests.get(
         "https://en.wikipedia.org/wiki/List_of_largest_cities_of_U.S._states_and_territories_by_population"
     )
@@ -52,7 +53,8 @@ def getMostPopulatedCities(stateAbbreviations):
 
 
 # same function as above, but returns it in a .csv file
-def getMostPopulatedCitiesCSV(stateAbbreviations):
+def getMostPopulatedCitiesCSV():
+    stateAbbreviations = getStateAbbreviations()
     page = requests.get(
         "https://en.wikipedia.org/wiki/List_of_largest_cities_of_U.S._states_and_territories_by_population"
     )
@@ -133,9 +135,6 @@ def removeTrailingJunk(s):
 
 if __name__ == "__main__":
     # if you just want to get a list of the state abbreviations, just use the line: getStateAbbreviations()
-    print("Getting state abbreviations...")
-    stateAbbreviations = getStateAbbreviations()
-    print("Done!")
     print("Getting most populated cities...")
-    getMostPopulatedCitiesCSV(stateAbbreviations)
+    getMostPopulatedCitiesCSV()
     print("All done!")
