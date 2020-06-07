@@ -1,6 +1,13 @@
+# output files
+yelp_dataset_gatherer/outputs/citiesList.csv
+yelp_dataset_gatherer/outputs/statesAbbreviations.csv
+yelp_dataset_gatherer/outputs/yelpReviewsDataset.csv
+
+# python files
 venv/
 __pycache__
 
+# personal configurations
 .vscode/
 test.py
 test.html
