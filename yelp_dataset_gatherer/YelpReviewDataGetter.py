@@ -73,8 +73,8 @@ def YelpDatasetGetter():
                         tempReview = []
 
                     # break  # testing
-                break  # testing
-            break  # testing
+                # break  # testing
+            # break  # testing
         # print(tempReview)
 
 
