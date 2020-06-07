@@ -75,7 +75,6 @@ def YelpDatasetGetter():
                     # break  # testing
                 # break  # testing
             # break  # testing
-        # print(tempReview)
 
 
 if __name__ == "__main__":
