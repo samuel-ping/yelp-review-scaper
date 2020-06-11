@@ -1,7 +1,7 @@
 # output files
-yelp_dataset_gatherer/outputs/citiesList.csv
-yelp_dataset_gatherer/outputs/statesAbbreviations.csv
-yelp_dataset_gatherer/outputs/yelpReviewsDataset.csv
+outputs/citiesList.csv
+outputs/statesAbbreviations.csv
+outputs/yelpReviewsDataset.csv
 
 # python files
 venv/
